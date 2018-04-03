@@ -78,7 +78,7 @@ int main(int argc, char **argv)
           Inet_ntop(AF_INET, &clientaddr.sin_addr, client_ip_string,
                     INET_ADDRSTRLEN);
 
-          printf("server connected to %s (%s)\n", client_hostname,
+          printf("Connected to %s (%s)\n", client_hostname,
                  client_ip_string);
 
           echo(connfd);
